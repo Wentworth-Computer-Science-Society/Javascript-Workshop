@@ -44,6 +44,74 @@ By giving the script tag some specific attributes, you can actually write your j
 
 Now that we understand how to actaully use our JavaScript within our webpage, let's start taking a look at the fundamentals of the language!
 ##  Data Types
+### Primitive types
+Javscript has 6 primitive datatypes
+### Objects
+### Arrays
 ##  Basic Syntax
+### Variables
+Currently, JavaScript supports three different keywords for declaring variables. We will observe how variables are scoped within code and discuss the tradeoffs to using each keyword. The syntax for instantiating a variable generally looks like the following:
+
+```keyword name = value```
+
+The keyword is either (var, let or const), the name can be any valid variable name, and value can be any of the data types discussed earlier
+####  Var
+Before the EcmaScript 6 standard was introduced, this was the only way to declare variables in JavaScript. An example of var can be seen below:
+
+```var x = 1;```
+
+The reason var is avoided now, is because of the way it is scoped. In js, variables declared with the var keyword are scoped at the function level. Meaning code like this
+
+```
+for (var i = 0; i < 5; i++) {
+  console.log(i);
+}
+console.log(i);
+```
+
+Will actually not give any problems. Even though the variable appears to be out of scope, an variable declared with the var keyword exists for the entire scope of the function.
+
+### let and const
+This is the new way to declare variables in JavaScript and is also the reccomended way. 
+### Conditionals
+
+Conditionals work mostly the way they do in Java. The syntax is almost indistinguishable from Java as can be seen in the example below
+
+```
+if (condition) {
+  //do something
+} else if (condition) {
+  //do something else
+} else {
+  //do the default thing
+}
+```
+### Loops
+
+### functions
 ##  Useful array methods
-##  The DOM API
+In many languages, there are simple abstractions built over array iteration, that allow you to easily manipulate, find or iterate through an array. Java allows this through [Streams])(https://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/). Although these concepts can be confusing at first, it is important to learn
+them as they appear in many languages, and often let you write code more concisely. Often you can chain these operations to turn a for loop into a single one liner.
+
+Although there are some exceptions, the syntax for these methods looks like the following:
+
+```
+const array = [1,2,3,4]
+
+array.method(function to be executed for each element in the list);
+```
+
+### forEach
+The most simple of these functions is forEach. As you would expect, it simply iterates over each element and applies the function you pass in to the element. A simple example is printing out every 
+### map
+This method is used to transform data in an array to an array of a different set of data. The example below shows how to transform an array of objects to just an array of the id property of an object:
+
+```
+
+```
+### filter
+Like the name implies, filter lets you pass a function in 
+### reduce
+### find
+Find can be used to find 
+
