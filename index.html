@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <meta charset="UTF-8"> 
+       <title>Todo App</title>
+       <link rel="stylesheet" type="text/css" href="index.css">
+       <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>TODO App</h1>
+        </header>
+
+        <section>
+            <div class="container-lists">
+                <div class="content-header">
+                    <h2>My Lists</h2>
+                </div>
+
+                <div class="list-body">
+                    <div class="container">
+                        <ul id="lists">
+                        </ul>
+
+                        <form method="POST">
+                            <label id="add-list">+</label>
+                            <input id="list-input" type="text" placeholder="Create New" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-lists">
+                <div class="content-header">
+                    <h2 id="list-header">Todos</h2>
+                </div>
+
+                <div class="list-body">
+                    <div class="container">
+                        <ul id="todos">
+                        </ul>
+
+                        <form method="POST">
+                            <label id="add-todo">+</label>
+                            <input id="todo-input" type="text" placeholder="Create New" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="delete-container">
+            <button class="btn delete">Clear Completed Tasks</button>
+            <button class="btn delete">Delete Selected List</button>
+        </div>
+    </body>
+</html>
